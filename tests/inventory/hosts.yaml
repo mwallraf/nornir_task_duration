@@ -1,0 +1,8 @@
+test1:
+  groups: [all]
+  hostname: 1.2.3.4
+  platform: oneaccess_oneos
+test2:
+  groups: [all]
+  hostname: 1.2.3.5
+  platform: oneaccess_oneos

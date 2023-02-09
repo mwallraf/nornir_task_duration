@@ -1,0 +1,19 @@
+---
+version: '2.1'
+
+services:
+  nornir_task_duration_test:
+    hostname: nornir_task_duration_test
+    image: dbarroso/stupid_ssh_container
+    ports:
+      - "2222:22"
+    networks:
+      net1:
+        ipv4_address: 100.64.0.10
+
+networks:
+  net1:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 100.64.0.1/24

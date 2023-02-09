@@ -1,0 +1,15 @@
+---
+username: ""
+password: ""
+connection_options:
+  netmiko:
+    extras:
+      ssh_config_file: "~/.ssh/config"
+      conn_timeout: 20
+      read_timeout_override: 20
+      timeout: 30
+  paramiko:
+    extras:
+      conn_timeout: 20
+data:
+  cmd_running_config: show running-config
